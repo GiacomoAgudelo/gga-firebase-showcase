@@ -1,0 +1,27 @@
+storage:
+  provider: gcs            # oppure "firebase" se stai usando l’altro adapter
+  gcs:
+    bucket: "gga-firebase-ops-1.firebasestorage.app"
+    projectId: "gga-firebase-ops-1"
+
+
+app:
+  firebase:
+    type: "service_account"
+    project_id: "gga-firebase-ops-1"
+    private_key_id: "683302a588874b86b215d3d2a33d571b58a2cfa8"
+    private_key: "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCfIJSWeXIVRKEI\n8GXJ1++qjCPPIBTi3UtkcUkV/Afk6VmOtZ4tR025A8FKEsgzJXE6aOr9HVF0bLat\nmhKrSsxefN55IbGTlDq3M5oLLqt9kQ0OgwvKOYfoGSFtjRCYVEFb986iZKMiTGvj\n1OhJxooRO6/R8kc29hFSkAueXyWF+L7zjO57ElN7ezd1YDkia2vt36ewo3RN6kSE\nqylc7tTcE0mVf4CiWssCBZYPtMSNlw8Cje07/XKi8vnOwnQfFzDNdMgJVEcOoh9Z\ndI/Ojfk2aUhnLQiUP/s76YWqtivse+ZwlQRxvvkSkyEokcI0THmcrt5C4u/ThaJe\nqqRnL9YJAgMBAAECggEAE5fZ49tJSkgcgfLDvcIqXvgJcrfzCmoQHep7Ast5F10K\nK3G+a7nTXpwRQTMl1nJeSkBf6tGg1XKLXb3SXagEmP/MDuMwr8i5IBSo+4aAFCJ3\nlplZKsnBq7jobkpHyFHbiFzvYvx8P71kLXXqMidRmcSdJf8seJ58zIsy+wmhH6kq\n6bTd/sHdwNsebSQcwqVsWxgZqBNeaPnxH3AwN56jn0dZ9JqIZIUsq+9ojjMxlKj/\n9LmFdvK5Sdx/hwni4zfCuia8gzbeGrU2DPLaOd0smNHnVKCydpiwo7oixN8rQgI/\nuUwlQQSH6B3bZMEdVxVa6OFVdnrIjbtybahSik5ZeQKBgQDUOb+rNMjk2qi/0cln\nGLVpWHrSsQoXcNbz+OkPuyPeUEfLqn/0NnKuq+b5oksegh15ay6Y47vA07fPCP7L\n6y1DeGumykkUNiR1mcp/v39U109RHJiceYXtbZwGVYOKbs9/RNXnozq465vIDD0M\ntRvsTgBTRc2NMziBzwd1kH/aFQKBgQC/8w4yPA9kW7r/ib+W5TzrAwTXh+LibZ3R\n+CqceDDaqbY6pdbk0eHzN9YKsqzM3T/8Kj2+QfLJ2phgexJqShGNdr52GD+lESQA\nckaV2X5keo8SYgoBgEmdfQAO6svO1dXX8xtVbfhhUL0mPLCEMNseT+U9onR6YyL5\n6t5sB+lNJQKBgA0u1SgmbEBDEO5xcqhT0ZkMpPyHgM/583BOSvPuNQkvRXZyTeZ2\np2MQTJW/LhlkDb6oGMnog5Yz0Jwsu98g6bviNBW1RRrbTiJ7/ic3VwqHIWcxdo1p\nwxb/kwyVrUkhHwSR2xO7gP9Rq2ie0gADFAv2wHBrypv1zZHKsXTtF/QNAoGBAIMk\npMZdkoaWxaRhkKyf4ocOgPhgtvrMuc8DJtnQpFBBM2fOdovPefiaZXrZqIYvg8/d\nbGHY3PBckU8ZxvMnt+ZXArncx18X3ukPKnqnJluwAKAmq39rDuCyzp9ie+zM3FW2\nmy46/EBA0XqWbGNkndCP9aeunrYflX36ogxdO2ChAoGAAcpgjiRdErymb/VGbKj1\nZukq1HSYLi3Q2BXYqj+ak6lhRIX7qAc2TYJNAvZrDEnMOH7xOAtZhEDD2LkSGUmq\nmfkUhukDn7NmUAB+G/V9wQPM1++wsVhiYrI5Zpt2+9BcRUtFuoOmG/1smDRS2uJB\nQv1npmBJb+7qF0kTIIRACs8=\n-----END PRIVATE KEY-----\n"
+    client_email: "firebase-adminsdk-fbsvc@gga-firebase-ops-1.iam.gserviceaccount.com"
+    client_id: "110643076123737507466"
+    auth_uri: "https://accounts.google.com/o/oauth2/auth"
+    token_uri: "https://oauth2.googleapis.com/token"
+    auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs"
+    client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40gga-firebase-ops-1.iam.gserviceaccount.com"
+    universe_domain: "googleapis.com"
+    scopes:
+      - https://www.googleapis.com/auth/datastore
+      - https://www.googleapis.com/auth/firebase.messaging
+      - https://www.googleapis.com/auth/identitytoolkit
+    db_id: "gga-firebase-ops-1"
+    storage: "gga-firebase-ops-1.firebasestorage.app"
+    durationUrlSigned: 15

@@ -1,24 +1,60 @@
-# Compiled class file
-*.class
+# --- Build output
+target/
+build/
+out/
 
-# Log file
+# --- IDE
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.vscode/
+
+# --- OS
+.DS_Store
+Thumbs.db
+
+# --- Logs & reports
+logs/
 *.log
+hs_err_pid*
+replay_pid*
+surefire-reports/
+failsafe-reports/
+jacoco.exec
+jacoco/
+coverage/
 
-# BlueJ files
-*.ctxt
+# --- Maven wrapper (non ignorare il jar se lo committi)
+!.mvn/wrapper/maven-wrapper.jar
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
+# --- Archives
 *.zip
 *.tar.gz
 *.rar
+*.war
+*.nar
+*.ear
+# (valuta se tenere o togliere *.jar; se lo tieni, lascia l’eccezione sopra)
+*.jar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# --- Env & segreti (IMPORTANTE)
+.env
+.env.*
+application-local.*
+application-*.secrets.*
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+serviceAccount*.json
+firebase-*.json
+gcloud-*.json
+
+# --- (Opzionale, se aggiungi FE o emulator)
+node_modules/
+dist/
+.firebase/
