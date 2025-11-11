@@ -1,17 +1,15 @@
-# Usa Java 21 runtime leggero
+# ---- Build stage ----
+FROM maven:3.9-eclipse-temurin-21 AS build
+WORKDIR /src
+COPY pom.xml .
+RUN mvn -q -DskipTests dependency:go-offline
+COPY src ./src
+RUN mvn -q -DskipTests clean package
+
+# ---- Runtime stage ----
 FROM eclipse-temurin:21-jre-alpine
-
-# Crea directory app
 WORKDIR /app
-
-# Copia il JAR buildato
-COPY target/*.jar app.jar
-
-# Imposta variabile JVM ottimizzata
-ENV JAVA_TOOL_OPTIONS="-XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0"
-
-# Espone la porta 8080 (Railway inietta $PORT)
+COPY --from=build /src/target/*.jar app.jar
+ENV JAVA_TOOL_OPTIONS="-XX:MaxRAMPercentage=75.0"
 EXPOSE 8080
-
-# Comando di avvio
-ENTRYPOINT ["sh", "-c", "java $JAVA_TOOL_OPTIONS -jar /app/app.jar"]
+ENTRYPOINT ["sh","-c","java $JAVA_TOOL_OPTIONS -jar /app/app.jar"]
